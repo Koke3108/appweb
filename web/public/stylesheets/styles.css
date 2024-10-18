@@ -1,0 +1,343 @@
+:root {
+  --color-bg: linear-gradient(180deg, #0366d6 70%, #5aa4fa, #fddf84, #ffc100);
+  --color-header-bg: #0366d6;
+  --color-button-bg: #003878;
+  --color-button-hover: #ffc100;
+  --color-button-light: #e9ecef;
+  --color-input-bg: #ffffff;
+  --color-border: #d1d5da;
+  --color-text: #000000;
+  --color-title: #0366d6;
+  --color-subtext: #101317;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  --color-danger: #d73a49;
+  --color-navbar-bg: #333;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-size-base: 16px;
+  --font-size-title: 28px;
+  --font-size-title-big: 32px;
+  --font-size-subtitle: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  background: var(--color-bg);
+  color: var(--color-text);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: var(--color-header-bg);
+  color: white;
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px var(--color-shadow);
+}
+
+header h1 {
+  font-size: var(--font-size-title);
+  color: white;
+}
+
+header nav button {
+  background-color: var(--color-button-bg);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+header nav button:hover {
+  background-color: var(--color-button-hover);
+}
+
+.logo-title-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: var(--font-size-title);
+  color: white;
+  margin: 0;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background-color: var(--color-input-bg);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px var(--color-shadow);
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: var(--color-input-bg);
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--color-button-bg);
+}
+
+.button-login {
+  background-color: var(--color-button-bg);
+  color: white;
+  text-align: center;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.button-login:hover {
+  background-color: var(--color-button-hover);
+}
+
+.recover {
+  padding-top: 15px;
+}
+
+.movie-list {
+  background-color: var(--color-input-bg);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px var(--color-shadow);
+  width: 100%;
+  max-width: 900px;
+}
+
+h1 {
+  font-size: var(--font-size-title-big);
+  margin-bottom: 20px;
+  color: var(--color-title);
+}
+
+h2 {
+  font-size: var(--font-size-title);
+  margin-bottom: 20px;
+  color: var(--color-title);
+}
+
+p {
+  color: var(--color-subtext);
+  margin-bottom: 18px;
+  font-size: 20px;
+}
+
+.movie-item {
+  display: inline-block;
+  width: 180px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: var(--color-input-bg);
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 8px var(--color-shadow);
+  transition: transform 0.2s;
+}
+
+.movie-item:hover {
+  transform: scale(1.05);
+}
+
+.movie-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.movie-item p {
+  margin-top: 10px;
+  font-size: var(--font-size-subtitle);
+  font-weight: bold;
+  color: var(--color-title);
+}
+
+.delete-btn {
+  background-color: var(--color-danger);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.delete-btn:hover {
+  background-color: #a8323e;
+}
+
+a {
+  color: var(--color-title);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: var(--color-subtext);
+  background-color: var(--color-header-bg);
+  color: white;
+  margin-top: 20px;
+}
+
+footer p {
+  margin-bottom: 5px;
+}
+
+.hamburger {
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar {
+  display: none;
+  flex-direction: column;
+  background-color: var(--color-navbar-bg);
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px var(--color-shadow);
+  z-index: 10;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin-bottom: 10px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  color: var(--color-button-hover);
+}
+
+.navbar.active {
+  display: flex;
+}
+
+.support-form {
+  background-color: var(--color-input-bg);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px var(--color-shadow);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.support-form h2 {
+  font-size: var(--font-size-title);
+  margin-bottom: 20px;
+  color: var(--color-title);
+}
+
+.support-form .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.support-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.support-form .form-group input,
+.support-form .form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+}
+
+.support-form .form-group button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--color-button-bg);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.support-form .form-group button:hover {
+  background-color: var(--color-button-hover);
+}
