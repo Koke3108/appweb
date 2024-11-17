@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "nombre_usuario": "Jorge",
+        "contrasena": "1234",
+        "copias": [
+            "AK002",
+            "AV001",
+            "DP001"
+        ]
+    },
+    {
+        "id": 2,
+        "nombre_usuario": "Boto",
+        "contrasena": "1234",
+        "copias": [
+            "AV001",
+            "AV002"
+        ]
+    }
+]

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <% include head.ejs %>
+        <title>Soporte Técnico</title>
+</head>
+
+<body>
+    <% include header.ejs %>
+        <main class="main-container">
+            <div class="support-form">
+                <h2>Soporte técnico</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="titulo">Título del problema</label>
+                        <input type="text" id="titulo" name="titulo" class="input-field">
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion">Descripción</label>
+                        <textarea id="descripcion" name="descripcion" rows="5" class="input-field"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Mandar solicitud</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <script src="../javascripts/script.js"></script>
+</body>
+
+</html>

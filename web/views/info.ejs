@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <% include head.ejs %>
+        <title>Información de Película</title>
+</head>
+
+<body>
+    <% include header.ejs %>
+        <main>
+            <div id="movie-details">
+                <img src="<%= movie.imagen %>" alt="<%= movie.titulo %>">
+                <div class="movie-info">
+                    <h2>
+                        <%= movie.titulo %>
+                    </h2>
+                    <p>Género: <%= movie.genero %>
+                    </p>
+                    <p>Director: <%= movie.director %>
+                    </p>
+                    <p>Año: <%= movie.año %>
+                    </p>
+                    <p>Descripción: <%= movie.descripcion %>
+                    </p>
+                    <h3>Copias disponibles:</h3>
+                    <ul>
+                        <% movie.copias.forEach(copia=> { %>
+                            <li>ID: <%= copia.id %>, Estado: <%= copia.estado %>, Formato: <%= copia.formato %>
+                            </li>
+                            <% }) %>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <script src="../public/javascripts/loadMovieDetails.js"></script>
+        <script src="../public/javascripts/script.js"></script>
+</body>
+
+</html>

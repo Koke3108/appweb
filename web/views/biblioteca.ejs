@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <%- include('./partials/head', { title: 'Biblioteca' }) %>
+</head>
+
+<body>
+    <header>
+        <%- include('./partials/header') %>
+    </header>
+    <main>
+        <div class="movie-list" id="user-movies">
+            <h2>Tus películas:</h2>
+            <% if (userMovies && userMovies.length> 0) { %>
+                <% userMovies.forEach(movie=> { %>
+                    <div class="movie-item">
+                        <img src="<%= movie.imagen %>" alt="<%= movie.titulo %>">
+                        <p>
+                            <%= movie.titulo %>
+                        </p>
+                        <a href="/info?id=<%= movie.id %>">
+                            <button>Ver detalles</button>
+                        </a>
+                    </div>
+                    <% }) %>
+                        <% } else { %>
+                            <p>No hay películas disponibles para mostrar.</p>
+                            <% } %>
+        </div>
+    </main>
+    <script src="../javascripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+[
+    {
+        "id": 1,
+        "titulo": "Akira",
+        "genero": "Animación/Ciencia Ficción",
+        "año": 1988,
+        "descripcion": "Un clásico de la animación japonesa que narra la historia de una sociedad distópica.",
+        "director": "Katsuhiro Otomo",
+        "imagen": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1657097430-41cCuwW7QZL._SL500_.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        "copias": [
+            {
+                "id": "AK001",
+                "estado": "disponible",
+                "formato": "Blu-ray"
+            },
+            {
+                "id": "AK002",
+                "estado": "reservado",
+                "formato": "DVD"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "titulo": "Los Vengadores",
+        "genero": "Acción/Superhéroes",
+        "año": 2012,
+        "descripcion": "Un grupo de héroes se une para salvar al mundo de una amenaza global.",
+        "director": "Joss Whedon",
+        "imagen": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1561060629-51ebhJXUZqL.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        "copias": [
+            {
+                "id": "AV001",
+                "estado": "disponible",
+                "formato": "Blu-ray"
+            },
+            {
+                "id": "AV002",
+                "estado": "disponible",
+                "formato": "Streaming"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "titulo": "Star Wars",
+        "genero": "Ciencia Ficción/Aventura",
+        "año": 1977,
+        "descripcion": "La épica historia de lucha entre la Alianza Rebelde y el Imperio Galáctico.",
+        "director": "George Lucas",
+        "imagen": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1657095786-51Mo-7HacZS._SL500_.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        "copias": [
+            {
+                "id": "SW001",
+                "estado": "disponible",
+                "formato": "DVD"
+            },
+            {
+                "id": "SW002",
+                "estado": "reservado",
+                "formato": "Blu-ray"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "titulo": "El Padrino",
+        "genero": "Drama/Crimen",
+        "año": 1972,
+        "descripcion": "La historia de la familia Corleone y su imperio criminal en Nueva York.",
+        "director": "Francis Ford Coppola",
+        "imagen": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1561060643-41WMFqes1iL.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        "copias": [
+            {
+                "id": "GP001",
+                "estado": "disponible",
+                "formato": "Blu-ray"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "titulo": "The Batman",
+        "genero": "Acción/Superhéroes",
+        "año": 2022,
+        "descripcion": "Una nueva versión del Caballero de la Noche enfrentando a sus enemigos en Gotham.",
+        "director": "Matt Reeves",
+        "imagen": "https://posters.movieposterdb.com/22_02/2022/1877830/l_1877830_764432ad.jpg",
+        "copias": [
+            {
+                "id": "TB001",
+                "estado": "disponible",
+                "formato": "Blu-ray"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "titulo": "Deadpool 3",
+        "genero": "Acción/Comedia",
+        "año": 2024,
+        "descripcion": "La nueva entrega de Deadpool con su característico humor irreverente.",
+        "director": "Shawn Levy",
+        "imagen": "https://posters.movieposterdb.com/24_05/2024/6263850/l_deadpool-wolverine-movie-poster_ca977381.jpg",
+        "copias": [
+            {
+                "id": "DP001",
+                "estado": "disponible",
+                "formato": "Streaming"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "titulo": "Joker",
+        "genero": "Drama/Thriller",
+        "año": 2019,
+        "descripcion": "Una exploración del origen y evolución del infame Joker.",
+        "director": "Todd Phillips",
+        "imagen": "https://posters.movieposterdb.com/24_06/2024/11315808/l_joker-folie-a-deux-movie-poster_8b8497ec.jpg",
+        "copias": [
+            {
+                "id": "JK001",
+                "estado": "disponible",
+                "formato": "Blu-ray"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "titulo": "Alien",
+        "genero": "Ciencia Ficción/Terror",
+        "año": 1979,
+        "descripcion": "La tripulación de la nave espacial Nostromo descubre una letal criatura alienígena.",
+        "director": "Ridley Scott",
+        "imagen": "https://posters.movieposterdb.com/24_06/2024/18412256/l_alien-romulus-movie-poster_bce598ef.jpg",
+        "copias": [
+            {
+                "id": "AL001",
+                "estado": "disponible",
+                "formato": "DVD"
+            }
+        ]
+    }
+]
