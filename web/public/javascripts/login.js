@@ -1,4 +1,4 @@
-// Función para manejar el login
+
 async function handleLogin(event) {
     event.preventDefault();
 
@@ -13,7 +13,7 @@ async function handleLogin(event) {
 
         if (user) {
             localStorage.setItem('authenticatedUser', JSON.stringify(user));
-            window.location.href = '/biblioteca';
+            window.location.href = '../html/biblioteca.html';
         } else {
             messageElement.textContent = 'Nombre de usuario o contraseña incorrectos.';
             messageElement.style.color = 'red';
